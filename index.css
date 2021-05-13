@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --padright: 40px;
+    --pad: 30px;
+    --padbottom: 5px;
+    --padleft: 30px;
+    --textcolor: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  background-color: hsl(0, 0%, 95%); 
+}
+
+.container {
+    display: flex;
+    width: 55%;
+    padding-left: 300px;
+    padding-top: 80px;
+    height: 60vh;
+}
+
+.left {
+    background-color: hsl(31, 77%, 52%);
+    padding-right: var(--padright);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.middle {
+    background-color: hsl(184, 100%, 22%);
+    padding-right: var(--padright);
+}
+
+.right {
+    background-color: hsl(179, 100%, 13%);
+    padding-right: var(--padright);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.left img {
+    padding: var(--pad);
+    padding-bottom: var(--padbottom);
+}
+
+.middle img {
+    padding: var(--pad);
+    padding-bottom: var(--padbottom);
+}
+
+.right img {
+    padding: var(--pad);
+    padding-bottom: var(--padbottom);
+}
+
+.left button {
+    color: hsl(31, 77%, 52%);
+}
+
+.middle button {
+    color: hsl(184, 100%, 22%);
+}
+
+.right button {
+    color: hsl(179, 100%, 13%);
+}
+
+button {
+    padding: 10px;
+    width: 110px;
+    margin: 15%;
+    margin-top: 50px;
+    border-radius: 25px;
+    border: none;
+}
+
+h3 {
+    padding-left: var(--padleft);
+    color: var(--textcolor);
+    font-family: "Big Shoulders Display";
+    font-size: 25px;
+}
+
+p {
+    padding-left: var(--padleft);
+    color: var(--textcolor);
+    line-height: 20px;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .container {
+        display: grid;
+        width: 58%;
+        padding-left: 80px;
+        padding-top: 10px;
+    }
+
+    .left {
+        border-radius: 10px 10px 0px 0px;
+        height: 100%;
+    }
+
+    button {
+        margin: 10px;
+    }
+
+    h3 {
+        margin: 10px;
+        padding-left: 20px;
+    }
+
+    .right {
+        border-radius: 0px 0px 10px 10px;
+    }
+}
